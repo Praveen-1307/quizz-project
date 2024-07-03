@@ -59,8 +59,6 @@ function renderQuestions(page) {
 
         questionDiv.innerHTML = `<p>Question ${i + 1}: ${questionObj.question}</p>${optionsHTML}`;
         questionContainer.appendChild(questionDiv);
-
-        // Add event listener to store user answer
         questionDiv.querySelectorAll(`input[name="question${i}"]`).forEach(input => {
             input.addEventListener('change', (event) => {
                 userAnswers[i] = event.target.value;
