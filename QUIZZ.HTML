@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Quiz Application</title>
+    <link rel="stylesheet" href="quizz.css">
+</head>
+<body background="AI.jpg">
+    <div class="blur-container">
+        <div class="head">
+            <img class="logo" src="cit logo.png" alt="CIT Logo">
+            <h1>Coimbatore Institute of Technology</h1>
+        </div>
+        <div class="quizz">
+            <h1>Quizz Contest</h1>
+        </div>
+        <div class="timer" id="timer">Time left: 10:00</div>
+        <form id="quiz-form">
+            <div id="username-container" class="username">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <button type="button" id="start-btn">Start Quiz</button>
+            </div>
+            <div id="question-container" style="display: none;"></div>
+            <div class="pagination-controls" style="display: none;">
+                <button type="button" id="prev-btn">Previous</button>
+                <button type="button" id="next-btn">Next</button>
+                <button type="button" id="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="quizz.js"></script>
+</body>
+</html>
