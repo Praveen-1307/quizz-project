@@ -1,3 +1,4 @@
+
 const initialTime = 600; 
 const timerElement = document.getElementById('timer');
 let time = initialTime;
@@ -167,5 +168,9 @@ function calculateScore() {
         }
     });
 
-    alert(`Thank you for participating! You scored ${score} out of ${questions.length}`);
+    // Display the score and hide the quiz
+    document.getElementById('question-container').style.display = 'none';
+    document.querySelector('.pagination-controls').style.display = 'none';
+    document.getElementById('score-container').style.display = 'block';
+    document.getElementById('score').textContent = `Thank you for participating! You scored ${score} out of ${questions.length}`;
 }
